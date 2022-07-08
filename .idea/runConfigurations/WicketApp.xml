@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WicketApp" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.apachefirst.Start" />
+    <module name="ApacheFirstApp" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

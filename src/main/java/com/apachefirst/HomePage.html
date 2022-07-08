@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:wicked="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <head>
     <meta charset="utf-8"/>
     <title>Apache Wicket Quickstart</title>
@@ -8,20 +8,29 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
 </head>
 <body>
-<div id="hd">
-    <div id="logo">
-        <img src="logo.png" width="50px" height="50px" alt="Wicket Logo"/>
-        <h1>Apache Wicket</h1>
+    <div id="hd">
+        <div id="logo">
+            <img src="logo.png" width="50px" height="50px" alt="Wicket Logo"/>
+            <h1>Apache Wicket</h1>
+        </div>
     </div>
-</div>
-<div id="bd">
-
-</div>
-<div id="ft">
-    <p>
-      Aktualny cas je:  <span wicked:id="time"></span>
-    </p>
-</div>
-
+    <div id="bd">
+        <div styles="display: flex; flex-direction: row; width: 100%; background-color: #FF5500">
+            <div style="width: 25%; height: 50px; line-height: 50px; background-color: #092E67; text-align: center">
+                <a wicket:id="openHangman">Hangman App</a>
+            </div>
+            <div style="width: 25%; height: 50px; line-height: 50px; background-color: #092E67; text-align: center">
+                <a>ToDo List App</a>
+            </div>
+            <div style="width: 25%; height: 50px; line-height: 50px; background-color: #092E67; text-align: center">
+                <a>Easy App</a>
+            </div>
+            <div style="width: 25%; height: 50px; line-height: 50px; background-color: #092E67; text-align: center">
+                <a>Forms App</a>
+            </div>
+        </div>
+    </div>
+    <div id="ft">
+    </div>
 </body>
 </html>
