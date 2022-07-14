@@ -2,8 +2,8 @@ package com.apachefirst;
 
 
 import com.apachefirst.main.hangmanGame.HangmanGameApp;
+import com.apachefirst.modalWindows.ModalDialog;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
@@ -15,6 +15,7 @@ public class HomePage extends WebPage {
         super(pageParameters);
 
         add(new BookmarkablePageLink<Void>("openHangman", HangmanGameApp.class));
+        add(new BookmarkablePageLink<Void>("openModal", ModalDialog.class));
     }
 
 

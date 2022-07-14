@@ -1,6 +1,7 @@
 package com.apachefirst;
 
 import com.apachefirst.main.hangmanGame.HangmanGameApp;
+import com.apachefirst.modalWindows.ModalDialog;
 import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
@@ -18,7 +19,7 @@ public class WicketApplication extends WebApplication {
         super.init();
 
         mountPage("/hangman_home", HangmanGameApp.class);
-
+        mountPage("/dialog_home", ModalDialog.class);
         getCspSettings().blocking()
                 .add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF)
                 .add(CSPDirective.STYLE_SRC, "https://fonts.googleapis.com/css")

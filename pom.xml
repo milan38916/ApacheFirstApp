@@ -92,14 +92,13 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- uncomment if WebSocket support is needed
 		<dependency>
 			<groupId>org.eclipse.jetty.websocket</groupId>
 			<artifactId>javax-websocket-server-impl</artifactId>
 			<version>${jetty9.version}</version>
 			<scope>test</scope>
 		</dependency>
-		-->
+
 	</dependencies>
 	<build>
 		<resources>
