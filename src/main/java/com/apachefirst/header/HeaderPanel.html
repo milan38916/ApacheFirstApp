@@ -1,0 +1,34 @@
+
+<wicket:panel xmlns:wicket="http://wicket.apache.org" xmlns:wicked="http://wicket.apache.org">
+    <div class="header">
+        <div class="logoAndUser">
+            <div class="logo">
+                <img src="logo.png" width="50px" height="50px" alt="Wicket Logo"/>
+                <h1>Apache Wicket</h1>
+            </div>
+            <div class="user">
+                <div wicket:id="userImagePreview">
+                    <img class="userImage" src="man.png" width="50px" height="50px" alt="userPhoto"/>
+                </div>
+                <div wicket:id="addImageModal">
+                    <img class="plusImage" src="add.png" width="25px" height="25px" alt="addPhoto"/>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div>
+                <a wicket:id="openToDo">Hangman App</a>
+            </div>
+            <div>
+                <a wicket:id="openModal">Open Modal</a>
+            </div>
+            <div>
+                <a wicket:id="backToHome">Home</a>
+            </div>
+        </div>
+    </div>
+    <wicket:child>
+        <div wicket:id="modalDialogPhoto"></div>
+        <div wicket:id="modalDialogInputPhoto"></div>
+    </wicket:child>
+</wicket:panel>

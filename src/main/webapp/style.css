@@ -1,2 +1,82 @@
+body {
+    margin: 0 !important;
+}
+.header {
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(to right, blue, purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logoAndUser {
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header .logoAndUser .logo {
+    width: 18vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header .logoAndUser .logo h1 {
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+.header .logoAndUser .logo img {
+    margin-left: 25px;
+}
+
+.header .logoAndUser .user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.header .logoAndUser .user .userImage {
+    border-radius: 100px;
+    position: absolute;
+    z-index: 10;
+}
+.header .logoAndUser .user .plusImage {
+    bottom: -5px;
+    right: -5px;
+    position: absolute;
+    z-index: 20;
+}
+
+.header .links {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.header .links div {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 7px;
+    background: aliceblue;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 15px;
+    font-family: "Footlight MT Light", serif;
+}
+
+.header .links div a {
+    text-decoration: none;
+}
+
 
 
