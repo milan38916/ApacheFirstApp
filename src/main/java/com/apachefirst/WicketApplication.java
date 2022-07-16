@@ -4,6 +4,7 @@ import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
+import org.apache.wicket.protocol.http.mock.Cookies;
 
 public class WicketApplication extends WebApplication {
 
@@ -22,6 +23,8 @@ public class WicketApplication extends WebApplication {
                 .add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
 
     }
+
+
 
 
 }

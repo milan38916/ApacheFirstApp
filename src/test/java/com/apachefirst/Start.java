@@ -84,8 +84,7 @@ public class Start
 		// serverContainer.addEndpoint(new WicketServerEndpointConfig());
 
 		// uncomment next line if you want to test with JSESSIONID encoded in the urls
-		// ((AbstractSessionManager)
-		// bb.getSessionHandler().getSessionManager()).setUsingCookies(false);
+		bb.getSessionHandler().setUsingCookies(false);
 
 		server.setHandler(bb);
 

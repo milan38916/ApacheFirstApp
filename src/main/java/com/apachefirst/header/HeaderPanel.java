@@ -2,6 +2,7 @@ package com.apachefirst.header;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
+import org.apache.wicket.extensions.ajax.markup.html.modal.ModalDialog;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
@@ -16,18 +17,11 @@ import com.apachefirst.modalWindows.ModalDialogPhotoContent;
 public class HeaderPanel extends Panel
 {
 
-    public HeaderPanel(final String id)
+    public HeaderPanel(final String id, ModalWindow modalDialogPhoto, ModalWindow modalDialogInputPhoto)
     {
         super(id);
 
-        ModalWindow modalDialogPhoto = new ModalWindow("modalDialogPhoto");
-        add(modalDialogPhoto);
-        modalDialogPhoto.setInitialHeight(500);
-        modalDialogPhoto.setInitialWidth(500);
-        modalDialogPhoto.setResizable(false);
-        modalDialogPhoto.setOutputMarkupId(true);
 
-        modalDialogPhoto.setContent(new ModalDialogPhotoContent(modalDialogPhoto.getContentId()));
 
         add(new AjaxLink<Void>("userImagePreview")
         {
@@ -38,14 +32,7 @@ public class HeaderPanel extends Panel
             }
         });
 
-        ModalWindow modalDialogInputPhoto = new ModalWindow("modalDialogInputPhoto");
-        add(modalDialogInputPhoto);
-        modalDialogInputPhoto.setInitialHeight(500);
-        modalDialogInputPhoto.setInitialWidth(500);
-        modalDialogInputPhoto.setResizable(false);
-        modalDialogInputPhoto.setOutputMarkupId(true);
 
-        modalDialogInputPhoto.setContent(new ModalDialogInputPhotoContent(modalDialogPhoto.getContentId()));
 
         add(new AjaxLink<Void>("addImageModal")
         {
