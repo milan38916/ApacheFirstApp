@@ -1,4 +1,37 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
-<wicket:extend></wicket:extend>
+<wicket:extend>
+    <div style="width: 80%; height: 80vh">
+        <div class="container pt-5">
+            <form wicket:id="toDoForm">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="text-white">Task</label>
+                    <input wicket:id="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="text-white">Detail</label>
+                    <input wicket:id="detail" type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container vh-50 toDoListBox pt-5">
+            <div class="vh-50 scrollable" wicket:id="toDoList">
+                <div class="card mt-0">
+                    <div class="card-header">
+                        <h4 class="card-title" wicket:id="itemTitle"></h4>
+                    </div>
+                    <div class="card-body">
+                        <p wicket:id="itemDetail"></p>
+                    </div>
+                    <div class="card-footer d-flex flex-row justify-content-end align-items-center">
+                        <button class="btn btn-outline-dark">Update</button>
+                        <button class="btn btn-outline-danger ml-2">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</wicket:extend>
 </html>
 

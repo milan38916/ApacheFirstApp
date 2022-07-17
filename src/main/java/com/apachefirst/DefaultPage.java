@@ -37,6 +37,10 @@ public class DefaultPage extends WebPage {
         add(modalDialogInputPhoto);
         modalDialogInputPhoto.setResizable(true);
         modalDialogInputPhoto.setOutputMarkupId(true);
+        modalDialogInputPhoto.setWidthUnit("px");
+        modalDialogInputPhoto.setHeightUnit("px");
+        modalDialogInputPhoto.setInitialWidth(500);
+        modalDialogInputPhoto.setInitialHeight(500);
 
         modalDialogInputPhoto.setPageCreator(() -> new ModalDialogInputPhotoContent(modalDialogInputPhoto.getContentId()));
 

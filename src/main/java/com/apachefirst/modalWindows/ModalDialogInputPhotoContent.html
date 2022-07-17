@@ -1,20 +1,23 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<div style="width: 100%; height: 500px" xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
     <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
-        <form wicket:id="photoForm" class="inputBox" style="width: 80%;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-radius: 7px;
-    border-color: blue;
-    border-width: 2px;">
-            <label class="imageInputLabel">Choose Photo</label>
-            <input class="imageInput" wicket:id="photoUpload" type="file"/>
-            <input type="submit" value="Upload"/>
+        <form wicket:id="photoForm" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="custom-file mb-3">
+                <input wicket:id="photoUpload" type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Upload"/>
         </form>
-        <div class="imagePreview">
-            <img wicket:id="preview"/>
+        <div class="w-100 h-auto d-flex align-items-center justify-content-center">
+            <img class="w-50"  wicket:id="preview"/>
         </div>
     </div>
 </div>
+</body>
+</html>
+
