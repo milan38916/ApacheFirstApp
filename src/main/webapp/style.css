@@ -157,7 +157,7 @@ body {
 }
 
 .toDoListBox {
-    height: 40vh;
+    height: 60vh;
     overflow-y: scroll;
 }
 
@@ -165,9 +165,6 @@ body {
     display: none;
 }
 
-.scrollable {
-    height: 40vh;
-}
 
 
 

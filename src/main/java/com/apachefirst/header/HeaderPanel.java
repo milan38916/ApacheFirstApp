@@ -2,17 +2,13 @@ package com.apachefirst.header;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
-import org.apache.wicket.extensions.ajax.markup.html.modal.ModalDialog;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
-import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.IModel;
 
-import com.apachefirst.main.hangmanGame.ToDoList;
-import com.apachefirst.modalWindows.ModalDialogInputPhotoContent;
+import com.apachefirst.main.toDo.ToDoList;
 import com.apachefirst.modalWindows.ModalDialogPhoto;
-import com.apachefirst.modalWindows.ModalDialogPhotoContent;
 
 public class HeaderPanel extends Panel
 {
